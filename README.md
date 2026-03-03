@@ -112,8 +112,22 @@ python -m felan.evaluate_model \
 
 
 # ICRA 2026
-For the results reported in the ICRA 2026 paper, use the `icra_2026` branch. It includes trained models and the corresponding hyperparameters.
-
+To reproduce the results reported in the ICRA 2026 paper, you can evaluate the models provided in `icra2026_trained_models`. For example:
+```bash
+python -m felan.evaluate_model \
+  --robot spot_real \
+  --model_folder icra2026_trained_models \
+  --nn FeLaN \
+  --model_name epochs_2000_spot_real_freq_100hz_seed_0
+```
+or
+```bash
+python -m felan.evaluate_model \
+  --robot talos \
+  --model_folder icra2026_trained_models \
+  --nn MjxDNEA \
+  --model_name epochs_3000_talos_sim_freq_100hz_SpatialSpd_seed_0
+```
 
 # Citing
 If you find our work or the provided datasets useful, please consider citing:
