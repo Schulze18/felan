@@ -114,6 +114,8 @@ python -m felan.evaluate_model \
 # ICRA 2026
 For the results reported in the ICRA 2026 paper, use the `icra_2026` branch. It includes trained models and the corresponding hyperparameters.
 
+# Acknowledgement
+We gratefully acknowledge the support of NVIDIA Corporation through the NVIDIA Academic Grant Program, including the provision of RTX 6000 Ada Generation GPUs used in this research.
 
 # Citing
 If you find our work or the provided datasets useful, please consider citing:
